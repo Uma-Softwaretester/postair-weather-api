@@ -27,7 +27,7 @@ paths:
       summary: 'Retrieve airport codes'
       description: 'Returns a list of airport codes'
       responses:
-        200:
+        '200':
           description: 'A list of airports'
           headers:
             x-correlation-id:
@@ -39,16 +39,16 @@ paths:
               examples:
                 airportListExample:
                   $ref: '#/components/examples/airportListExample'
-        404:
+        '404':
           description: 'Not found'
           content:
-            application/problem+json:
+              application/problem+json:
               schema:
                 $ref: '#/components/schemas/problemDetail'
               examples:
                 notFoundExample:
                   $ref: '#/components/examples/notFoundExample'
-        401:
+        '401':
           description: 'Unauthorized'
           content:
             application/problem+json:
@@ -58,7 +58,7 @@ paths:
                 401httpExample:
                   $ref: '#/components/examples/401http'
 
-        403:
+        '403':
           description: 'Forbidden'
           content:
             application/problem+json:
@@ -68,7 +68,7 @@ paths:
                 401httpExample:
                   $ref: '#/components/examples/403http'
 
-        500:
+        '500':
           description: 'Internal Server Error'
           headers:
             Content-Type:
@@ -89,7 +89,7 @@ paths:
       summary: 'Retrieve turbulence report'
       description: 'Returns a list of turbulence reports'
       responses:
-        200:
+        '200':
           description: 'Retrieve a turbulence report'
           headers:
             x-correlation-id:
@@ -98,7 +98,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/TurbulenceReportList'
-        404:
+        '404':
           description: 'Not found'
           content:
             application/problem+json:
@@ -107,7 +107,7 @@ paths:
               examples:
                 notFoundExample:
                   $ref: '#/components/examples/notFoundExample'
-        401:
+        '401':
           description: 'Unauthorized'
           content:
             application/problem+json:
@@ -117,7 +117,7 @@ paths:
                 401httpExample:
                   $ref: '#/components/examples/401http'
 
-        403:
+        '403':
           description: 'Forbidden'
           content:
             application/problem+json:
@@ -127,7 +127,7 @@ paths:
                 401httpExample:
                   $ref: '#/components/examples/403http'
 
-        500:
+        '500':
           description: 'Internal Server Error'
           headers:
             Content-Type:
@@ -148,7 +148,7 @@ paths:
       summary: 'Retrieve forecast'
       description: 'Returns a list of forecasts'
       responses:
-        200:
+        '200':
           description: 'Retrieve a forecast report'
           headers:
             x-correlation-id:
@@ -160,7 +160,7 @@ paths:
               examples:
                 forecastListExample:
                   $ref: '#/components/examples/forecastListExample'
-        404:
+        '404':
           description: 'Not found'
           content:
             application/problem+json:
@@ -169,7 +169,7 @@ paths:
               examples:
                 notFoundExample:
                   $ref: '#/components/examples/notFoundExample'
-        401:
+        '401':
           description: 'Unauthorized'
           content:
             application/problem+json:
@@ -179,7 +179,7 @@ paths:
                 401httpExample:
                   $ref: '#/components/examples/401http'
 
-        403:
+        '403':
           description: 'Forbidden'
           content:
             application/problem+json:
@@ -189,7 +189,7 @@ paths:
                 401httpExample:
                   $ref: '#/components/examples/403http'
 
-        500:
+        '500':
           description: 'Internal Server Error'
           headers:
             Content-Type:
@@ -211,7 +211,7 @@ paths:
       summary: 'Retrieve METAR report'
       description: 'Returns a list of METAR reports'
       responses:
-        200:
+        '200':
           description: 'Retrieve METAR reports'
           headers:
             x-correlation-id:
@@ -223,7 +223,7 @@ paths:
               examples:
                 metarListExample:
                   $ref: '#/components/examples/metarListExample'
-        404:
+        '404':
           description: 'Not found'
           content:
             application/problem+json:
@@ -232,7 +232,7 @@ paths:
               examples:
                 notFoundExample:
                   $ref: '#/components/examples/notFoundExample'
-        401:
+        '401':
           description: 'Unauthorized'
           content:
             application/problem+json:
@@ -242,7 +242,7 @@ paths:
                 401httpExample:
                   $ref: '#/components/examples/401http'
 
-        403:
+        '403':
           description: 'Forbidden'
           content:
             application/problem+json:
@@ -252,7 +252,7 @@ paths:
                 401httpExample:
                   $ref: '#/components/examples/403http'
 
-        500:
+        500':
           description: 'Internal Server Error'
           headers:
             Content-Type:

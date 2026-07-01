@@ -1,0 +1,15 @@
+$kind: http-request
+description: Returns a list of forecasts
+url: "{{baseUrl}}/forecast?forecastCity=string"
+method: GET
+headers:
+  Accept: application/json
+queryParams:
+  - key: forecastCity
+    value: string
+    $type: string
+body:
+  type: text
+  content: ""
+examples: ./.resources/Retrieve forecast.resources/examples
+order: 1000
